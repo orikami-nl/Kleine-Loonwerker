@@ -1,5 +1,9 @@
 Loonwerker::Application.routes.draw do
   devise_for :admins
+  devise_scope :admin do
+		get "login", :to => "devise/sessions#new"
+		get "logout", :to=> "devise/sessions#destroy"
+  end
 
   root :to => "home#index"
 
