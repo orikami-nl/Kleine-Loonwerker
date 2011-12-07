@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loonwerker</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<div id=message">
+		<% flash.each do |key, value| %>
+  		<%= content_tag(:div, value, :class => "site-flash #{key}") %>
+		<% end %>
+	</div>
+
+	<%= yield %>
+
+</body>
+</html>
