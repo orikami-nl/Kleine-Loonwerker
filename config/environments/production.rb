@@ -59,6 +59,6 @@ Loonwerker::Application.configure do
   config.active_support.deprecation = :notify
 
 	#devise
-	config.action_mailer.default_url_options = { :host => 'localhost:3000' } #TODO: SET TO HEROKU
+	config.action_mailer.default_url_options = { :host => 'http://dekleineloonwerker.herokuapp.com' }
   config.assets.initialize_on_precompile = false
 end
