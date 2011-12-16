@@ -1,4 +1,16 @@
 Loonwerker::Application.routes.draw do
+  get "over-ons", :to => "about#index", :as => "about"
+
+  get "contact", :to => "contact#index"
+  post "contact/send"
+
+  get "losse-verhuur", :to => "verhuur#index", :as => "verhuur"
+
+  get "diensten/grondwerk"
+  get "diensten/bestraten"
+  get "diensten/tuinaanleg"
+  get "diensten/slopen"
+
   devise_for :admins
   devise_scope :admin do
 		get "login", :to => "devise/sessions#new"

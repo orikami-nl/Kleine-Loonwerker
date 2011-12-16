@@ -1,0 +1,2 @@
+class VerhuurController < ApplicationController
+end
