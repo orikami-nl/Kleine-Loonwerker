@@ -2,7 +2,7 @@ Loonwerker::Application.routes.draw do
   get "over-ons", :to => "about#index", :as => "about"
 
   get "contact", :to => "contact#index"
-  post "contact/send"
+  post "contact/send-contact", :to => "contact#send_contact", :as => "send_contact"
 
   get "losse-verhuur", :to => "verhuur#index", :as => "verhuur"
 

@@ -6,15 +6,28 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="showgrid">
+<body>
+	<div class="container showgrid">
+		<div id="notice">
+			<% flash.each do |key, value| %>
+  			<%= content_tag(:div, value, :class => "site-flash #{key}") %>
+			<% end %>
+		</div>
+		<header class="span-24">
+			<h1>De Kleine Loonwerker</h1>
+			<nav class="align-right">
+				<%= link_to "Home", root_path %>
+				<%= link_to "Diensten", diensten_grondwerk_path %>
+				<%= link_to "Verhuur", verhuur_path %>
+				<%= link_to "Over ons", about_path %>
+				<%= link_to "Contact", contact_path %>
+			</nav>
+		</header>
 
-	<div id=message">
-		<% flash.each do |key, value| %>
-  		<%= content_tag(:div, value, :class => "site-flash #{key}") %>
-		<% end %>
+		<%= yield %>
 	</div>
-
-	<%= yield %>
-
+	<footer>
+		<p>Hier komt de footer</p>
+	</footer>
 </body>
 </html>
