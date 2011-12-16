@@ -15,12 +15,12 @@
 		</div>
 		<header class="span-24">
 			<h1>De Kleine Loonwerker</h1>
-			<nav class="align-right">
-				<%= link_to "Home", root_path %>
-				<%= link_to "Diensten", diensten_grondwerk_path %>
-				<%= link_to "Verhuur", verhuur_path %>
-				<%= link_to "Over ons", about_path %>
-				<%= link_to "Contact", contact_path %>
+			<nav id="main-navigation" class="align-right">
+				<%= link_to "Home", root_path, :class => controller_active?('home') %>
+				<%= link_to "Diensten", diensten_grondwerk_path, :class => controller_active?('diensten') %>
+				<%= link_to "Verhuur", verhuur_path, :class => controller_active?('verhuur') %>
+				<%= link_to "Over ons", about_path, :class => controller_active?('about') %>
+				<%= link_to "Contact", contact_path, :class => controller_active?('contact') %>
 			</nav>
 		</header>
 
