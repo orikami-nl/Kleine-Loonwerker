@@ -19,6 +19,10 @@ Loonwerker::Application.routes.draw do
 		get "logout", :to=> "devise/sessions#destroy"
   end
 
+	namespace 'admin' do
+		resources :pages, :only => [:index, :edit, :update]
+	end 
+
   root :to => "home#index"
 
   # The priority is based upon order of creation:

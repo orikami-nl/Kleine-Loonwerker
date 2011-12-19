@@ -1,4 +1,6 @@
 class DienstenController < ApplicationController
+	manageable_content_for :grondwerk, :bestraten, :tuinaanleg, :slopen
+
   def grondwerk
   end
 

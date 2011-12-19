@@ -1,5 +1,6 @@
 class ContactController < ApplicationController
 	before_filter :check_honeypots, :only => [:send_contact]
+	manageable_content_for :contact
 
   def check_honeypots
     return true if honeypot_untouched?

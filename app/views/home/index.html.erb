@@ -4,8 +4,10 @@
 
 <div class="span-24">Home plaatje</div>
 <div class="span-24 center-text">
-<h2>Eén aanspreekpunt voor al uw werkzaamheden</h2>
-<p class="prepend-2 span-20 append-2 last">De kleine loonwerker is gespecialiseerd in minigraaf- en tuinwerkzaamheden. Wij verzorgen voor u het volledige plaatje van graafwerk en bestrating tot het aanleggen van uw complete tuin. Omdat wij alles in eigen beheer hebben hoeft u maar met één bedrijf in zee. Dat scheelt voor u een hoop zorgen en zo kunnen wij het maatwerk leveren waar u op zit te wachten.</p>
+	<%= manageable_layout_content_for :titel_zin %>
+	<div class="prepend-2 span-20 append-2 last">	
+		<%= manageable_layout_content_for :inleiding %>
+	</div>
 </div>
 <div class="span-21 center-text">
 	<h3 class="span-7"><%= link_to "Grondwerk", diensten_grondwerk_path %></h3>
@@ -14,10 +16,14 @@
 </div>
 <div class="span-12 center-text">
 	<h3><%= link_to "Slopen", diensten_slopen_path %></h3>
-	<p class="prepend-1 append-1">Voordat er gebouwd kan worden, moet er vaak eerst gesloopt worden. Wij verwijderen in een handomdraai uw ongewenste muren of funderingen.</p>
+	<div class="prepend-1 append-1">	
+		<%= manageable_layout_content_for :slopen_kort %>
+	</div>
 </div>
 <div class="span-12 center-text last">
 	<h3><%= link_to "Verhuur", verhuur_path %></h3>
-	<p class="prepend-1 append-1">Naast dat we een volledige service bieden, kunt u bij ons ook voor losse verhuur terecht. Dus als u een losse container of graafmachine nodig heeft, dan is dat bij ons zo geregeld.</p>
+	<div class="prepend-1 append-1">
+		<%= manageable_layout_content_for :verhuur_kort %>
+	</div>
 </div>
 	
