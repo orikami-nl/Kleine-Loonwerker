@@ -1,23 +1,17 @@
 class PicturesController < ApplicationController
+	before_filter :authenticate_admin! 
+
   # GET /pictures
   # GET /pictures.json
   def index
-    @pictures = Picture.all
+    @grondwerk_pictures = Picture.where(:category => "grondwerk")
+		@bestraten_pictures = Picture.where(:category => "bestraten")
+		@tuinaanleg_pictures = Picture.where(:category => "tuinaanleg")
+		@slopen_pictures = Picture.where(:category => "slopen")
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pictures }
-    end
-  end
-
-  # GET /pictures/1
-  # GET /pictures/1.json
-  def show
-    @picture = Picture.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @picture }
     end
   end
 

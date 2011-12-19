@@ -8,3 +8,7 @@
 	<h2>Tuinaanleg</h2>
 	<p>Find me in app/views/diensten/index.html.erb</p>
 </div>
+
+<% if admin_signed_in %>
+	<%= render 'admin_actions' %>
+<% end %>

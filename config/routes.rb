@@ -1,5 +1,5 @@
 Loonwerker::Application.routes.draw do
-  resources :pictures
+  resources :pictures, :except => [:show]
 
   get "over-ons", :to => "about#index", :as => "about"
 

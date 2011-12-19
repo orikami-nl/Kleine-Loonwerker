@@ -1,27 +1,69 @@
-<h1>Listing pictures</h1>
+<h2>Slidewhows beheren</h2>
 
+<h3>Grondwerk</h3>
 <table>
-  <tr>
-    <th>Position</th>
-    <th>Photo</th>
-    <th>Category</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @pictures.each do |picture| %>
-  <tr>
-    <td><%= picture.position %></td>
-    <td><%= picture.photo %></td>
-    <td><%= picture.category %></td>
-    <td><%= link_to 'Show', picture %></td>
-    <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
-    <td><%= link_to 'Destroy', picture, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+	<% @grondwerk_pictures.each do |picture| %>
+	  <tr>
+	    <td><%= picture.photo %></td>
+	    <td><%= picture.category %></td>
+	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
+	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
+			<td>Naar voren</td>
+			<td>Naar achteren</td>
+	  </tr>
+	<% end %>
+	<%= link_to 'Foto toevoegen', new_picture_path, :category => "grondwerk" %>
 </table>
 
 <br />
 
-<%= link_to 'New Picture', new_picture_path %>
+<h3>Bestraten</h3>
+<table>
+	<% @bestraten_pictures.each do |picture| %>
+	  <tr>
+	    <td><%= picture.photo %></td>
+	    <td><%= picture.category %></td>
+	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
+	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
+			<td>Naar voren</td>
+			<td>Naar achteren</td>
+	  </tr>
+	<% end %>
+	<%= link_to 'Foto toevoegen', new_picture_path, :category => "bestraten" %>
+</table>
+
+<br />
+
+<h3>Tuinaanleg</h3>
+<table>
+	<% @tuinaanleg_pictures.each do |picture| %>
+	  <tr>
+	    <td><%= picture.photo %></td>
+	    <td><%= picture.category %></td>
+	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
+	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
+			<td>Naar voren</td>
+			<td>Naar achteren</td>
+	  </tr>
+	<% end %>
+	<%= link_to 'Foto toevoegen', new_picture_path, :category => "tuinaanleg" %>
+</table>
+
+<br />
+
+<h3>Slopen</h3>
+<table>
+	<% @slopen_pictures.each do |picture| %>
+	  <tr>
+	    <td><%= picture.photo %></td>
+	    <td><%= picture.category %></td>
+	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
+	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
+			<td>Naar voren</td>
+			<td>Naar achteren</td>
+	  </tr>
+	<% end %>
+	<%= link_to 'Foto toevoegen', new_picture_path, :category => "slopen" %>
+</table>
+
+

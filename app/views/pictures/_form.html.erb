@@ -12,16 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :position %><br />
-    <%= f.number_field :position %>
+    <%= f.label :category %><br />
+ 		<%= f.select(:category, ["grondwerk", "bestraten", "tuinaanleg", "slopen"], :selected => params[:category]) %>
   </div>
   <div class="field">
     <%= f.label :photo %><br />
-    <%= f.text_field :photo %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br />
-    <%= f.text_field :category %>
+    <%= f.file_field :photo %>
   </div>
   <div class="actions">
     <%= f.submit %>

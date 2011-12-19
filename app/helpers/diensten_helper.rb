@@ -6,4 +6,8 @@ module DienstenHelper
 			false
 		end
 	end
+
+	def get_category
+		request.path_parameters[:action]
+	end
 end
