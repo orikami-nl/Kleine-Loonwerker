@@ -13,6 +13,12 @@
   			<%= content_tag(:div, value, :class => "site-flash #{key}") %>
 			<% end %>
 		</div>
+		<% if admin_signed_in? %>
+			<div id="admin-box">
+				<%= link_to "Logout", logout_path %> | 
+				<%= link_to "Slideshows beheren", pictures_path %>
+			</div>
+		<% end %>
 		<header class="span-24">
 			<h1>De Kleine Loonwerker</h1>
 			<nav id="main-navigation" class="align-right">

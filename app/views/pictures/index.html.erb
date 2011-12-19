@@ -4,66 +4,62 @@
 <table>
 	<% @grondwerk_pictures.each do |picture| %>
 	  <tr>
-	    <td><%= picture.photo %></td>
-	    <td><%= picture.category %></td>
+	    <td><%= image_tag(picture.photo.thumb) %></td>
 	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
 	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
 			<td>Naar voren</td>
 			<td>Naar achteren</td>
 	  </tr>
 	<% end %>
-	<%= link_to 'Foto toevoegen', new_picture_path, :category => "grondwerk" %>
 </table>
+<%= link_to 'Foto toevoegen', :controller => :pictures, :action => :new, :category => "grondwerk" %>
 
-<br />
+<br><br>
 
 <h3>Bestraten</h3>
 <table>
 	<% @bestraten_pictures.each do |picture| %>
 	  <tr>
-	    <td><%= picture.photo %></td>
-	    <td><%= picture.category %></td>
+	    <td><%= image_tag(picture.photo.thumb) %></td>
 	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
 	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
 			<td>Naar voren</td>
 			<td>Naar achteren</td>
 	  </tr>
 	<% end %>
-	<%= link_to 'Foto toevoegen', new_picture_path, :category => "bestraten" %>
 </table>
+<%= link_to 'Foto toevoegen', :controller => :pictures, :action => :new, :category => "bestraten" %>
 
-<br />
+<br><br>
 
 <h3>Tuinaanleg</h3>
 <table>
 	<% @tuinaanleg_pictures.each do |picture| %>
 	  <tr>
-	    <td><%= picture.photo %></td>
-	    <td><%= picture.category %></td>
+	    <td><%= image_tag(picture.photo.thumb) %></td>
 	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
 	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
 			<td>Naar voren</td>
 			<td>Naar achteren</td>
 	  </tr>
 	<% end %>
-	<%= link_to 'Foto toevoegen', new_picture_path, :category => "tuinaanleg" %>
 </table>
+<%= link_to 'Foto toevoegen', :controller => :pictures, :action => :new, :category => "tuinaanleg" %>
 
-<br />
+<br><br>
 
 <h3>Slopen</h3>
 <table>
 	<% @slopen_pictures.each do |picture| %>
 	  <tr>
-	    <td><%= picture.photo %></td>
-	    <td><%= picture.category %></td>
+	    <td><%= image_tag(picture.photo.thumb) %></td>
 	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
 	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
 			<td>Naar voren</td>
 			<td>Naar achteren</td>
 	  </tr>
 	<% end %>
-	<%= link_to 'Foto toevoegen', new_picture_path, :category => "slopen" %>
 </table>
+<%= link_to 'Foto toevoegen', :controller => :pictures, :action => :new, :category => "slopen" %>
 
 

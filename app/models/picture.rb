@@ -1,13 +1,13 @@
 class Picture < ActiveRecord::Base
 	attr_accessible :photo, :category, :position
 	validates_presence_of :photo, :category
-	before_save :set_position, :only => [:create]
+	before_save :set_position, :only => [:create, :update]
   mount_uploader :photo, PictureUploader
 
 	def set_position
 		last_picture = Picture.where(:category => self.category).order("position").last
 		if last_picture.nil?
-			self.position = 0
+			self.position = 1
 		else
 			self.position = last_picture.position + 1
 		end

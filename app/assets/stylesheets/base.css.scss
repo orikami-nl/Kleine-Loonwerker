@@ -17,3 +17,14 @@
 .true{color:red;}
 .false{}
 }
+
+#admin-box{
+	position:fixed;
+	right:10px;
+	top:10px;
+	background:white;
+	border:solid black 2px;
+	height:20px;
+	width:200px;
+	text-align:center;
+}
