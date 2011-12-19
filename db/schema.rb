@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111219101846) do
+ActiveRecord::Schema.define(:version => 20111219135518) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -30,6 +30,26 @@ ActiveRecord::Schema.define(:version => 20111219101846) do
 
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
+
+  create_table "manageable_content_page_contents", :force => true do |t|
+    t.integer  "page_id"
+    t.string   "key"
+    t.boolean  "short",      :default => false
+    t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "manageable_content_page_contents", ["page_id", "key"], :name => "index_manageable_content_page_contents_on_page_id_and_key", :unique => true
+
+  create_table "manageable_content_pages", :force => true do |t|
+    t.string   "key"
+    t.string   "locale"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "manageable_content_pages", ["key", "locale"], :name => "index_manageable_content_pages_on_key_and_locale", :unique => true
 
   create_table "pictures", :force => true do |t|
     t.integer  "position"

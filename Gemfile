@@ -12,6 +12,7 @@ gem 'heroku'
 gem 'devise'
 gem 'blueprint-rails'
 gem 'rmagick'
+gem 'manageable_content'
 
 # Gems used only for assets and not required
 # in production environments by default.
