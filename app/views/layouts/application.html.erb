@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="container showgrid">
+	<div class="container main-content">
 		<div id="notice">
 			<% flash.each do |key, value| %>
   			<%= content_tag(:div, value, :class => "site-flash #{key}") %>
@@ -30,11 +30,12 @@
 				<%= link_to "Contact", contact_path, :class => controller_active?('contact') %>
 			</nav>
 		</header>
-
-		<%= yield %>
+		<div class="main-content">
+			<%= yield %>
+		</div>
 	</div>
-	<footer style="background-color:gray;">
-		<div class="container showgrid">
+	<footer id="footer">
+		<div class="container">
 			<div class="span-24">
 				<div class="align-right">
 					<p>De Kleine Loonwerker<br>

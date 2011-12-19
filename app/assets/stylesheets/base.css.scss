@@ -1,3 +1,16 @@
+body {
+	background:url('background.jpg');
+}
+
+.main-content{
+	background:url('container-background.png');
+}
+
+#footer {
+	height:272px;
+	background:url('gras.png');
+}
+
 .showgrid { background:url('/assets/grid.png'); }
 
 .align-right {
@@ -9,13 +22,22 @@
 }
 
 #main-navigation {
-.true{color:red;}
-.false{}
+	text-decoration:none;
+	.true{
+		background:url('tab.png');
+		font-color:black;
+	}
+	.false{
+		font-color:white;
+	}
 }
 
 #sub-navigation {
-.true{color:red;}
-.false{}
+	font-color:black;
+	.true{
+		background:url('tab-blue.png');
+	}
+	.false{}
 }
 
 #admin-box{
