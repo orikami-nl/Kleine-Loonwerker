@@ -25,13 +25,12 @@
    	<%= f.label 'Uw adres of woonplaats:' %><br />
    	<%= f.text_field :address, :class => "span-14" %>
  	</div>
- 	<div class="sweetness">
+ 	<div class="sweetness span-14">
    	<%= text_field_tag('its_so_sweet[email]','john@doe.com',:tabindex=>900) %>
    	<%= text_field_tag('its_so_sweet[name]','',:tabindex=>901) %>
    	<%= check_box_tag('its_so_sweet[agree]',1,false,:tabindex=>902) %>
  	</div>  
-	<div class="actions">
+	<div class="actions span-14">
    	<%= f.submit "Verzenden"%>
  	</div>
-  </div>
 <% end %>

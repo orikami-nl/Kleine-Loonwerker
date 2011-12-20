@@ -2,11 +2,12 @@
 	 | Contact
 <% end %>
 
-<div class="prepend-1 span-14 append-1">
-	<h2>Neem contact op</h2>
-	<%= render "form" %>
-</div>
+	<div class="prepend-1 span-14">
+		<h2>Neem contact op</h2>
+		<%= render "form" %>
+	</div>
 
-<div class="span-7">
-	<%= manageable_layout_content_for :contact %>
-</div>
+	<div class="prepend-1 span-7 append-1 last">
+		<%= manageable_layout_content_for :contact %>
+	</div>
+

@@ -1,14 +1,32 @@
-body {
-	background:url('background.jpg');
+#header{
+	h1{color:white;}
 }
 
-.main-content{
+.main-background {
+	padding-top:30px;
+	background:url('background.jpg');
+	background-position:bottom;
+	background-repeat:repeat-x;
+}
+
+.content-background{
 	background:url('container-background.png');
+	background-position:bottom;
+	background-repeat:repeat-x;
+	background-color:white;
+	padding-bottom:40px;
 }
 
 #footer {
+	position:relative;
+	top:-40px;
+	color:white;
 	height:272px;
 	background:url('gras.png');
+	background-repeat:repeat-x;
+	.footer-main{
+		margin-top:120px;
+	}
 }
 
 .showgrid { background:url('/assets/grid.png'); }
@@ -23,8 +41,9 @@ body {
 
 #main-navigation {
 	text-decoration:none;
+	background-size:100%;
 	.true{
-		background:url('tab.png');
+		background:url('tab.png') no-repeat;
 		font-color:black;
 	}
 	.false{
