@@ -17,6 +17,7 @@ class ContactController < ApplicationController
 
   def index
     @contact_mail = ContactMail.new(params[:contact_mail])
+		@review = Review.new
   end
 
   def send_contact

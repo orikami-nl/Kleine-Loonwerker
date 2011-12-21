@@ -1,0 +1,21 @@
+<%= form_for(@review) do |f| %>
+  <% if @review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% @review.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= f.label "Toon op voorpagina:" %><br />
+    <%= f.check_box :show_on_frontpage, :class => "span-14" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Waardering opslaan"%>
+  </div>
+<% end %>

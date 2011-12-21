@@ -1,0 +1,25 @@
+<h2>Alle referenties</h2>
+
+<table>
+  <tr>
+    <th>Rating</th>
+    <th>Naam</th>
+    <th>Woonplaats</th>
+    <th>Commentaar</th>
+		<th>Op voorpagina? (maximaal 3 aanvinken)</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reviews.each do |review| %>
+  <tr>
+    <td><%= review.rating %></td>
+    <td><%= review.name %></td>
+    <td><%= review.city %></td>
+    <td><%= review.comment %></td>
+    <td><%= review.show_on_frontpage %></td>
+    <td><%= link_to 'Bewerken', edit_review_path(review) %></td>
+    <td><%= link_to 'Verwijderen', review, confirm: 'Weet je het zeker?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
