@@ -1,4 +1,4 @@
-<h2>Alle referenties</h2>
+<h2>Alle ingestuurde referenties</h2>
 
 <table>
   <tr>
@@ -6,7 +6,7 @@
     <th>Naam</th>
     <th>Woonplaats</th>
     <th>Commentaar</th>
-		<th>Op voorpagina? (maximaal 3 aanvinken)</th>
+		<th>Op voorpagina? (maximaal 3)</th>
     <th></th>
     <th></th>
   </tr>
@@ -17,7 +17,7 @@
     <td><%= review.name %></td>
     <td><%= review.city %></td>
     <td><%= review.comment %></td>
-    <td><%= review.show_on_frontpage %></td>
+    <td><%= if review.show_on_frontpage then "ja" end %></td>
     <td><%= link_to 'Bewerken', edit_review_path(review) %></td>
     <td><%= link_to 'Verwijderen', review, confirm: 'Weet je het zeker?', method: :delete %></td>
   </tr>
