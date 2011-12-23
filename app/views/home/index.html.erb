@@ -3,30 +3,40 @@
 <% end %>
 
 <div class="span-24">Home plaatje</div>
-<div class="span-24 center-text">
+<div class="span-24 center-text inleiding-container">
 	<%= manageable_layout_content_for :titel_zin %>
 	<div class="prepend-2 span-20 append-2 last">	
 		<%= manageable_layout_content_for :inleiding %>
 	</div>
 </div>
-<div class="span-21 center-text">
-	<h3 class="span-7"><%= link_to "Grondwerk", diensten_grondwerk_path %></h3>
-	<h3 class="span-7"><%= link_to "Bestraten", diensten_bestraten_path %></h3>
-	<h3 class="span-7 last"><%= link_to "Tuinaanleg", diensten_tuinaanleg_path %></h3>
-</div>
-<div class="span-12 center-text">
-	<h3><%= link_to "Slopen", diensten_slopen_path %></h3>
-	<div class="prepend-1 append-1">	
-		<%= manageable_layout_content_for :slopen_kort %>
+<div class="span-24 center-text diensten-container">
+	<div class="diensten center-div">
+		<%= link_to diensten_grondwerk_path do %>
+			<div class="dienst-links"></div>
+		<% end %>
+		<%= link_to diensten_bestraten_path do %>
+			<div class="dienst-midden"></div>
+		<% end %>
+		<%= link_to diensten_tuinaanleg_path do %>
+			<div class="dienst-rechts"></div>
+		<% end %>
 	</div>
 </div>
-<div class="span-12 center-text last">
-	<h3><%= link_to "Verhuur", verhuur_path %></h3>
-	<div class="prepend-1 append-1">
-		<%= manageable_layout_content_for :verhuur_kort %>
+<div class="span-24 center-div overige-diensten-container">
+	<div class="span-12 center-text">
+		<h3><%= link_to "Slopen", diensten_slopen_path %></h3>
+		<div class="prepend-1 append-1">	
+			<%= manageable_layout_content_for :slopen_kort %>
+		</div>
+	</div>
+	<div class="span-12 center-text last">
+		<h3><%= link_to "Verhuur", verhuur_path %></h3>
+		<div class="prepend-1 append-1">
+			<%= manageable_layout_content_for :verhuur_kort %>
+		</div>
 	</div>
 </div>
-<div class="span-24 center-text">
+<div class="prepend-1 span-22 append-1 last review-container">
 	<%= render :partial => "review", :collection => @reviews %>
 </div>
 	

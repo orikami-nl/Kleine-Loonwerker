@@ -1,3 +1,52 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.diensten {
+	background:url('diensten.jpg');
+	height:193px;
+	width:890px;
+}
+
+.inleiding-container{
+	margin-top:40px;
+	margin-bottom:20px;
+}
+
+.diensten-container{
+	margin-bottom:40px;
+}
+
+.overige-diensten-container{
+	margin-bottom:40px;
+}
+
+.review-container{
+	margin-bottom:40px;
+	font-size:14px;
+	font-family:Garamond, serif;
+	font-style:italic;
+	.review-author{
+		font-size:12px;
+	}
+}
+
+.dienst-links {
+	float:left;
+	height:193px;
+	width:285px;
+	margin-right:24px;
+}
+
+.dienst-midden {
+	float:left;
+	height:193px;
+	width:272px;
+	margin-right:24px;
+}
+
+.dienst-rechts {
+	float:left;
+	width:285px;
+	height:193px;
+}	
