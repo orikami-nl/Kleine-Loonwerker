@@ -7,8 +7,8 @@
 	    <td><%= image_tag(picture.photo.thumb) %></td>
 	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
 	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
-			<td>Naar voren</td>
-			<td>Naar achteren</td>
+			<td><%= link_to 'Naar voren', :controller => 'pictures', :action => "move_up", :picture => picture %></td>
+			<td><%= link_to 'Naar achteren', :controller => 'pictures', :action => "move_down", :picture => picture %></td>
 	  </tr>
 	<% end %>
 </table>
@@ -23,8 +23,8 @@
 	    <td><%= image_tag(picture.photo.thumb) %></td>
 	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
 	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
-			<td>Naar voren</td>
-			<td>Naar achteren</td>
+			<td><%= link_to 'Naar voren', :controller => 'pictures', :action => "move_up", :picture => picture %></td>
+			<td><%= link_to 'Naar achteren', :controller => 'pictures', :action => "move_down", :picture => picture %></td>
 	  </tr>
 	<% end %>
 </table>
@@ -39,8 +39,8 @@
 	    <td><%= image_tag(picture.photo.thumb) %></td>
 	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
 	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
-			<td>Naar voren</td>
-			<td>Naar achteren</td>
+			<td><%= link_to 'Naar voren', :controller => 'pictures', :action => "move_up", :picture => picture %></td>
+			<td><%= link_to 'Naar achteren', :controller => 'pictures', :action => "move_down", :picture => picture %></td>
 	  </tr>
 	<% end %>
 </table>
@@ -55,8 +55,8 @@
 	    <td><%= image_tag(picture.photo.thumb) %></td>
 	    <td><%= link_to 'Bewerken', edit_picture_path(picture) %></td>
 	    <td><%= link_to 'Verwijderen', picture, confirm: 'Weet je het zeker?', method: :delete %></td>
-			<td>Naar voren</td>
-			<td>Naar achteren</td>
+			<td><%= link_to 'Naar voren', :controller => 'pictures', :action => "move_up", :picture => picture %></td>
+			<td><%= link_to 'Naar achteren', :controller => 'pictures', :action => "move_down", :picture => picture %></td>
 	  </tr>
 	<% end %>
 </table>

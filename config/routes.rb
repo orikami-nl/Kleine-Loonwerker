@@ -14,6 +14,9 @@ Loonwerker::Application.routes.draw do
   get "diensten/tuinaanleg"
   get "diensten/slopen"
 
+	get "pictures/move_up"
+	get "pictures/move_down"
+
   devise_for :admins
   devise_scope :admin do
 		get "login", :to => "devise/sessions#new"

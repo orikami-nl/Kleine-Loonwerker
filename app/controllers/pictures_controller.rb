@@ -3,6 +3,18 @@ class PicturesController < ApplicationController
 
   # GET /pictures
   # GET /pictures.json
+	def move_up
+		picture = Picture.find(params[:picture])
+		picture.move_up
+		redirect_to pictures_path
+	end
+
+	def move_down
+		picture = Picture.find(params[:picture])
+		picture.move_down
+		redirect_to pictures_path
+	end
+
   def index
     @grondwerk_pictures = Picture.where(:category => "grondwerk").order("position")
 		@bestraten_pictures = Picture.where(:category => "bestraten").order("position")

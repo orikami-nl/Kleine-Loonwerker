@@ -1,0 +1,5 @@
+<div class="span-24">
+	<% @pictures.each do |picture| %>
+		<ul><%= image_tag(picture.photo.slide) %></ul>
+	<% end %>
+</div>
