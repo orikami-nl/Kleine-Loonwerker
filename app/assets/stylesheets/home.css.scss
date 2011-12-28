@@ -31,22 +31,30 @@
 	}
 }
 
+.dienst {
+	&:hover {
+		background:white;
+		opacity:0.4;
+		filter:alpha(opacity=40);	
+	}
+}
+
 .dienst-links {
 	float:left;
 	height:193px;
-	width:285px;
-	margin-right:24px;
+	width:286px;
+	margin-right:21px;
 }
 
 .dienst-midden {
 	float:left;
 	height:193px;
-	width:272px;
-	margin-right:24px;
+	width:276px;
+	margin-right:21px;
 }
 
 .dienst-rechts {
 	float:left;
-	width:285px;
+	width:286px;
 	height:193px;
 }	

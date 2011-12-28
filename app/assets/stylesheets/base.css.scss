@@ -10,6 +10,10 @@
 }
 
 .content-background{
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
 	background:url('container-background.png');
 	background-position:bottom;
 	background-repeat:repeat-x;
@@ -24,6 +28,7 @@
 	height:272px;
 	background:url('gras.png');
 	background-repeat:repeat-x;
+	font-family:Garamond, serif;
 	.footer-main{
 		margin-top:120px;
 	}
@@ -45,21 +50,42 @@
 }
 
 #main-navigation {
-	text-decoration:none;
-	background-size:100%;
+	a {
+		font-size:16px;
+		text-decoration:none;
+		margin:5px;
+		padding:5px;
+	}
 	.true{
-		background:url('tab.png') no-repeat;
-		font-color:black;
+		background:white;
+		color:black;
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
+		-moz-border-radius-topleft:5px;
+		-moz-border-radius-topright:5px;
 	}
 	.false{
-		font-color:white;
+		color:white;
+		&:hover{
+			color:black;
+		}
 	}
 }
 
 #sub-navigation {
-	font-color:black;
+	a {
+		font-size:16px;
+		text-decoration:none;
+		margin:5px;
+		padding:5px;
+		color:black;
+	}
 	.true{
-		background:url('tab-blue.png');
+		background:blue;
+		border-bottom-left-radius:5px;
+		border-bottom-right-radius:5px;
+		-moz-border-radius-bottomleft:5px;
+		-moz-border-radius-bottomright:5px;
 	}
 	.false{}
 }

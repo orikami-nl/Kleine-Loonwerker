@@ -1,5 +1,5 @@
-<div class="span-8 slider-outer">
-	<div class="slider-inner", style = <%= "width:" + (@pictures.count * 280).to_s + "px;" %> >
+<div class="span-24 slider-outer">
+	<div class="slider-inner", style=<%="width:" + (@pictures.count * 280).to_s + "px;" %> >
 		<% @pictures.each do |picture| %>
 			<div class="picture"><%= image_tag(picture.photo.slide) %></div>
 		<% end %>
