@@ -1,3 +1,16 @@
 // Place all the styles related to the diensten controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.slider-outer{
+	margin-top:20px;
+	margin-bottom:20px;
+	background:white;
+  -moz-box-shadow: 3px 3px 4px gray; /* Firefox/Mozilla */  
+  -webkit-box-shadow: 3px 3px 4px gray; /*Safari/Chrome */  
+  box-shadow: 3px 3px 4px gray; /* Opera */  
+  /* IE 8 */  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='gray')";  
+  /* IE 5.5 - 7 */  
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='gray');  
+}

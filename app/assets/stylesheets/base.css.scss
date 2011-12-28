@@ -2,6 +2,15 @@
 	h1{color:white;}
 }
 
+.header-image{
+	background:#eeeeee;
+	height:150px;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
+}
+
 .main-background {
 	padding-top:30px;
 	background:url('background.jpg');
@@ -10,6 +19,7 @@
 }
 
 .content-background{
+	overflow:hidden;
 	border-top-left-radius:15px;
 	border-top-right-radius:15px;
 	-moz-border-radius-topleft:15px;
@@ -24,7 +34,7 @@
 #footer {
 	position:relative;
 	top:-40px;
-	color:white;
+	color:#eeeeee;
 	height:272px;
 	background:url('gras.png');
 	background-repeat:repeat-x;
@@ -73,6 +83,7 @@
 }
 
 #sub-navigation {
+	margin-bottom:20px;
 	a {
 		font-size:16px;
 		text-decoration:none;
@@ -81,7 +92,7 @@
 		color:black;
 	}
 	.true{
-		background:blue;
+		background:#3cb9d5;
 		border-bottom-left-radius:5px;
 		border-bottom-right-radius:5px;
 		-moz-border-radius-bottomleft:5px;

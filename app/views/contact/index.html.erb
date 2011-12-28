@@ -2,16 +2,17 @@
 	 | Contact
 <% end %>
 
-	<div class="prepend-1 span-14">
-		<h2>Neem contact op</h2>
-		<%= render "form" %>
-		<hr>
-		<h2>Wat vond u van onze service?</h2>
-		<p>Wij horen graag van u terug of u tevreden bent met ons werk. Via het onderstaande formulier kunt u uw waardering aan ons doorgeven.</p>
-		<%= render "reviews/form" %>
-	</div>
+<div class="span-24 header-image"></div>
+<div class="prepend-1 span-14">
+	<h2>Neem contact op</h2>
+	<%= render "form" %>
+	<hr>
+	<h2>Wat vond u van onze service?</h2>
+	<p>Wij horen graag van u terug of u tevreden bent met ons werk. Via het onderstaande formulier kunt u uw waardering aan ons doorgeven.</p>
+	<%= render "reviews/form" %>
+</div>
 
-	<div class="prepend-1 span-7 append-1 last">
-		<%= manageable_layout_content_for :contact %>
-	</div>
+<div class="prepend-1 span-7 append-1 last">
+	<%= manageable_layout_content_for :contact %>
+</div>
 
