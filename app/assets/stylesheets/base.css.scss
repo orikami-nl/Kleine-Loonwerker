@@ -31,23 +31,29 @@
 	padding-bottom:40px;
 }
 
-#footer {
+#footer-outer{
 	position:relative;
+	height:272;
+}
+
+#footer {
+	position:absolute;
+	width:100%;
 	top:-40px;
 	color:#eeeeee;
-	height:272px;
 	background:url('gras.png');
 	background-repeat:repeat-x;
+	height:272;
 	font-family:Garamond, serif;
 	.footer-main{
-		margin-top:120px;
+		margin-top:110px;
 	}
 }
 
 .showgrid { background:url('/assets/grid.png'); }
 
 .align-right {
-    float: right;
+  float: right;
 }
 
 .center-text {
