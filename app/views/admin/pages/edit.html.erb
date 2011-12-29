@@ -1,14 +1,8 @@
 <h2>Bewerk de <%= @page.key.titleize %> pagina</h2>
 <%= link_to "Terug", admin_pages_path %><br>
 <%= form_for @page, :url => admin_page_path(@page), :method => :put do |form| %>
-  <p>
-  <%= form.label :key %><br>
-  <%= form.text_field :key, :disabled => true %>
-  </p>
-  <p>
-  <%= form.label :locale %><br>
-  <%= form.text_field :locale, :disabled => true %><br><hr>
-  </p>
+  <%= form.hidden_field :key, :disabled => true %>
+  <%= form.hidden_field :locale, :disabled => true %><br><hr>
 
   <% unless form.object.page_contents.empty? %>
     <% eligible_contents = ManageableContent::Manager.eligible_contents(form.object.key) %>

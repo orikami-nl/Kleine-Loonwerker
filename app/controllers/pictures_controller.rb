@@ -1,5 +1,5 @@
 class PicturesController < ApplicationController
-	before_filter :authenticate_admin! 
+	before_filter :authenticate_admin!, :except => [:show] 
 
   # GET /pictures
   # GET /pictures.json
@@ -43,6 +43,10 @@ class PicturesController < ApplicationController
     @picture = Picture.find(params[:id])
   end
 
+	def show
+		@picture = Picture.find(params[:id])
+		render :layout => false
+	end
   # POST /pictures
   # POST /pictures.json
   def create
