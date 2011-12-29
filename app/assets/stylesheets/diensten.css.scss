@@ -2,9 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.slider-outer{
-	margin-top:20px;
-	margin-bottom:20px;
+#gallery-wrap{
+	margin:0 auto 0 auto;
+	height:200px;
+	width:840px;
+	overflow:hidden;
+	position:relative;
+	top:10px;
+
 	background:white;
   -moz-box-shadow: 3px 3px 4px gray; /* Firefox/Mozilla */  
   -webkit-box-shadow: 3px 3px 4px gray; /*Safari/Chrome */  
@@ -13,4 +18,29 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='gray')";  
   /* IE 5.5 - 7 */  
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='gray');  
+}
+
+#gallery{
+	position:relative;
+	left:0;
+	top:0;
+	list-style-type:none;
+	padding:0;
+	li{
+		float:left;
+		height:200px;
+		width:280px;
+	}
+}
+
+#gallery-controls{
+	width:840px;
+	margin:0 auto 10px auto;
+	a {
+		font-size:48px;
+		text-decoration:none;
+		color:black;
+	}
+	#gallery-prev{float:left;}
+	#gallery-next{float:right;}	
 }
