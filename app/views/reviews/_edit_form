@@ -11,11 +11,15 @@
     </div>
   <% end %>
 
-  <div>
-    <%= f.label "Toon op voorpagina:" %><br />
-    <%= f.check_box :show_on_frontpage, :class => "span-14" %>
+  <div class="span-24">
+    <%= f.label "Toon op voorpagina: " %>
+    <%= f.check_box :show_on_frontpage %>
   </div>
-  <div class="actions">
-    <%= f.submit "Waardering opslaan"%>
+  <div class="span-24">
+    <%= f.label "Tekst (alleen bewerken in geval van spelfouten):" %><br />
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions span-24">
+    <%= f.submit "Referentie opslaan"%>
   </div>
 <% end %>
