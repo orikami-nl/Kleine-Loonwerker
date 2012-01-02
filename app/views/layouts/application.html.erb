@@ -4,6 +4,12 @@
   <title>De Kleine Loonwerker<%= yield :title%></title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
+	<% if !(manageable_layout_content_for :korte_samenvatting).nil? %>
+		<meta name="description" content="<%= manageable_layout_content_for :korte_samenvatting %>" >
+	<% end %>
+	<meta name="author" content="Luuk den Teuling">
+	<meta name="keywords" content="kleine loonwerker, grondwerk, graven, tuinaanleg, gemonde, Brabant, loonwerker, tuin aanleggen">
+	<meta name="language" content="nl">
   <%= csrf_meta_tags %>
 </head>
 <body>

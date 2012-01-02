@@ -1,5 +1,5 @@
 class DienstenController < ApplicationController
-	manageable_content_for :grondwerk, :bestraten, :tuinaanleg, :slopen
+	manageable_content_for :grondwerk, :bestraten, :tuinaanleg, :slopen, :korte_samenvatting
 
   def grondwerk
 		@pictures = Picture.where(:category => "grondwerk").order("position")
