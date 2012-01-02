@@ -1,3 +1,13 @@
 // Place all the styles related to the verhuur controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.verhuur-content{
+	table {
+		width:500px;
+		caption{
+			background:#999966;
+			font-weight:bold;
+		}
+	}
+}
