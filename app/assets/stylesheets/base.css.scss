@@ -57,9 +57,7 @@ body{
 
 .main-background {
 	padding-top:30px;
-	background:url('background.jpg');
-	background-position:bottom;
-	background-repeat:repeat-x;
+	background:url('background.jpg') bottom repeat-x;
 }
 
 .content-background{
@@ -68,10 +66,7 @@ body{
 	border-top-right-radius:15px;
 	-moz-border-radius-topleft:15px;
 	-moz-border-radius-topright:15px;
-	background:url('container-background.png');
-	background-position:bottom;
-	background-repeat:repeat-x;
-	background-color:white;
+	background:white url('container-background.png') bottom repeat-x;
 	padding-bottom:40px;
 }
 
@@ -85,8 +80,7 @@ body{
 	width:100%;
 	top:-40px;
 	color:#eeeeee;
-	background:url('gras.png');
-	background-repeat:repeat-x;
+	background:url('gras.png') repeat-x;
 	height:272;
 	font-family:Garamond, serif;
 	.footer-main{
