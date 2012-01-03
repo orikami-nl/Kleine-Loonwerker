@@ -12,15 +12,47 @@ body{
 .spacer {
 	height:15px;
 }
-
-.header-image{
-	background:#eeeeee;
-	height:150px;
-	margin-bottom:2px;
+.rounded-top-corners{
 	border-top-left-radius:15px;
 	border-top-right-radius:15px;
 	-moz-border-radius-topleft:15px;
 	-moz-border-radius-topright:15px;
+}
+
+.header-image{
+	height:175px;
+	margin-bottom:2px;
+}
+
+.home-header{
+	width:946px;
+	height:171px;
+	border:2px solid white;
+	background:url('home.png');
+}
+.diensten-header{
+	width:946px;
+	height:171px;
+	border:2px solid white;
+	background:url('diensten.png');
+}
+.about-header{
+	width:946px;
+	height:171px;
+	border:2px solid white;
+	background:url('over-ons.png');
+}
+.contact-header{
+	width:946px;
+	height:171px;
+	border:2px solid white;
+	background:url('contact.png');
+}
+.verhuur-header{
+	width:946px;
+	height:171px;
+	border:2px solid white;
+	background:url('verhuur.png');
 }
 
 .main-background {
