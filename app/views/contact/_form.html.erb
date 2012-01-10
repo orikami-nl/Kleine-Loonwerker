@@ -18,11 +18,15 @@
 		<%= f.text_area :message, :rows=>10, :class => "span-14" %>
  	</div>
  	<div>
-   	<%= f.label 'Uw e-mail adres of telefoonnummer:' %><br />
-   	<%= f.text_field :info, :class => "span-14" %>
+   	<%= f.label 'Uw e-mail adres:' %><br />
+   	<%= f.text_field :email, :class => "span-14" %>
  	</div>
  	<div>
-   	<%= f.label 'Uw adres of woonplaats:' %><br />
+   	<%= f.label 'Uw telefoonnummer:' %><br />
+   	<%= f.text_field :telefoon, :class => "span-14" %>
+ 	</div>
+ 	<div>
+   	<%= f.label 'Uw adres en woonplaats:' %><br />
    	<%= f.text_field :address, :class => "span-14" %>
  	</div>
  	<div class="sweetness span-14">

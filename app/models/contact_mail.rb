@@ -1,10 +1,11 @@
 class ContactMail < MailForm::Base
-  attribute :info  
+  attribute :email  
+	attribute :telefoon
   attribute :message
   attribute :subject
 	attribute :address
 
-	validates :info, :presence => true
+	validates :email, :presence => true
 	validates :message, :presence => true 
 
   #attribute :nickname,  :captcha  => true
@@ -14,8 +15,8 @@ class ContactMail < MailForm::Base
   def headers
     {
       :subject => %(<#{subject}>),
-			:to => "thijsvdlaar@hotmail.com",
-      :from => "thijsvdlaar@hotmail.com"
+			:to => "luuk@den-teuling.nl",
+      :from => "luuk@den-teuling.nl"
     }
   end
 end
