@@ -5,9 +5,11 @@
 <div class="span-24 header-image rounded-top-corners">
 	<div class="home-header rounded-top-corners"></div>
 </div>
-<div class="span-24 center-text inleiding-container">
-	<%= manageable_layout_content_for :titel_zin %>
-	<div class="prepend-2 span-20 append-2 last">	
+<div class="span-24 inleiding-container">
+	<div class="center-text">
+		<%= manageable_layout_content_for :titel_zin %>
+	</div>
+	<div class="prepend-3 span-18 append-3 last">	
 		<%= manageable_layout_content_for :inleiding %>
 	</div>
 </div>
@@ -25,15 +27,19 @@
 	</div>
 </div>
 <div class="span-24 center-div overige-diensten-container">
-	<div class="span-12 center-text">
-		<h3><%= link_to "Slopen", diensten_slopen_path %></h3>
-		<div class="prepend-1 append-1">	
+	<div class="span-12">
+		<div class="prepend-3 span-8 append-1">	
+		<div class="center-text">
+			<h3><%= link_to "Slopen", diensten_slopen_path %></h3>
+		</div>
 			<%= manageable_layout_content_for :slopen_kort %>
 		</div>
 	</div>
-	<div class="span-12 center-text last">
-		<h3><%= link_to "Verhuur", verhuur_path %></h3>
-		<div class="prepend-1 append-1">
+	<div class="span-12 last">
+		<div class="prepend-1 span-8 append-3">
+			<div class="center-text">
+				<h3><%= link_to "Verhuur", verhuur_path %></h3>
+			</div>
 			<%= manageable_layout_content_for :verhuur_kort %>
 		</div>
 	</div>

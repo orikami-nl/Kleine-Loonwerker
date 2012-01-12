@@ -11,6 +11,13 @@ body{
 	}
 }
 
+.phone-numbers{
+	font-family:serif;
+	font-style:italic;
+	font-size:10px;
+	color:white;
+}
+
 .spacer {
 	height:15px;
 }
@@ -84,9 +91,12 @@ body{
 	color:#eeeeee;
 	background:url('gras.png') repeat-x;
 	height:272;
-	font-family:Garamond, serif;
+	font-family: serif;
 	.footer-main{
 		margin-top:110px;
+	}
+	.bedrijfs-info{
+		text-align:right;
 	}
 }
 
