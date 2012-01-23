@@ -13,7 +13,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="main-background">
+	<div class="main-background wrapper">
 		<div class="container">
 			<div id="notice">
 				<% flash.each do |key, value| %>
@@ -46,6 +46,7 @@
 				<%= yield %>
 			</div>
 		</div>
+		<div class="push"></div>
 	</div>
 	<footer>
 		<div id="footer-outer">
