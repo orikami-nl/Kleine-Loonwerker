@@ -12,6 +12,7 @@ class ContactMail < MailForm::Base
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
+
   def headers
     {
       :subject => %(<#{subject}>),
