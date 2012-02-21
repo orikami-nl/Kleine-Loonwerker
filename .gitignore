@@ -4,4 +4,3 @@ log/*.log
 tmp/
 .sass-cache/
 config/heroku_env.rb
-config/initializers/secret_token.rb
