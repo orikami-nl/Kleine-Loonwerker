@@ -1,5 +1,5 @@
 class ContactController < ApplicationController
-	before_filter :check_honeypots, :only => [:send_contact]
+	#before_filter :check_honeypots, :only => [:send_contact]
 	manageable_content_for :contact, :korte_samenvatting
 
   def check_honeypots
